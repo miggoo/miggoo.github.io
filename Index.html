@@ -1,44 +1,85 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Aimed Positioning</title>
-  <style>
-    h1
-    {text-align: center; margin-bottom:0px;}
-     h2
-    {text-align: center; margin-top:0px;}
-    h3
-    {
-    position: absolute;
-    margin:0px;
-    left: 0px;
-    top: 0px;
-    }
-    h4 {position: absolute;
-    right:0px;
-  bottom:0px;
-margin:0px;}
-h5 {position: absolute;
-left:0px;
-top: 50%;
-margin-bottom:0px;}
+    <title>Bootstrap Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        #example1 {
+            border: 2px solid black;
+            padding: 25px;
+            background: url(background.jpg);
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        </style>
+    <style>
+        img {
+            border: 1px solid #ddd;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded border */
+            padding: 5px;
+            /* Some padding */
+            width: 150px;
+            /* Set a small width */
+        }
+    
+        /* Add a hover effect (blue shadow) */
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
     </style>
-  <link rel="stylesheet" href="absolute.css">
-
+    <style>
+    container2 {
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+    width:100%;
+    }
+    
+    </style>
+   
 </head>
+
 <body>
+<!--Navigation bar-->
+<div id="nav-placeholder">
 
-<!-- Use CSS to place these in their respective locations -->
-<!-- Feel free to change the order of the elements -->
+</div>
 
-<h3>Top left of the page</h3>
-
-<h1>Center of the Page</h1>
-<h2>Just under header 1</h2>
-
-<h4>Bottom right of the page</h4>
-<h5>Center left of the page</h5>
+<script>
+    $(function () {
+        $("#nav-placeholder").load("nav.html");
+    });
+</script>
+<!--end of Navigation bar-->
+    
+        <div class="container"> 
+        <div id="example1">
+        <h3>Bootstrap Project</h3>
+        <p>The aim of this project was to pull climate data from XXXX, manipulate it in Pandas and use Matplotlib to plot and
+        seach for patterns.</p>
+       
+        </div>
+    </div>
+<div class="container2">
+<a target="_blank" href="Cloud Cover.html">
+    <img src="assets/images/cloudymap.png" alt="Cloud Cover Page">
+    <a target="_blank" href="Humidity.html">
+        <img src="assets/images/windmap.png" alt="Humidity Page">
+<a target="_blank" href="Temperature.html">
+    <img src="assets/images/temperaturemap.png" alt="Cloud Cover Page">
+<a target="_blank" href="Wind.html">
+    <img src="assets/images/windmap.png" alt="Wind Page">
+</div>
 
 </body>
+
 </html>
